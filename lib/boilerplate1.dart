@@ -33,12 +33,12 @@ class _Boilerplate1State extends State<Boilerplate1> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           leading: Builder(
-            builder: (context) {
+            builder: (BuildContext context) {
               return IconButton(
                 onPressed: () {
                   Scaffold.of(context).openDrawer();
                 }, 
-                icon: Icon(Icons.menu, color: Colors.white,)
+                icon: Icon(Icons.menu, color: Colors.white,),
                 );
             }
           ),
