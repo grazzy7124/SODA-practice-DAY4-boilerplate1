@@ -32,7 +32,16 @@ class _Boilerplate1State extends State<Boilerplate1> {
       home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          // leading: Icon(Icons.menu),
+          leading: Builder(
+            builder: (context) {
+              return IconButton(
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                }, 
+                icon: Icon(Icons.menu, color: Colors.white,)
+                );
+            }
+          ),
           backgroundColor: Color(0xff4B6EB1),
           title: const Text(appTitle, style: Boilerplate1.titleStyle,)
           ),
