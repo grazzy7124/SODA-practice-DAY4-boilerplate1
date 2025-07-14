@@ -63,23 +63,29 @@ class _Boilerplate1State extends State<Boilerplate2> {
           actions: [
             Builder(
               builder: (context) {
-                return Switch(
-                  activeTrackColor: Color(0xff4B6EB1),
-                  value: isChecked, 
-                  onChanged: (bool value){
+                return Theme(
+                  data: ThemeData(
+                  useMaterial3: false
+                  ), 
+                  child: Switch(
+                    thumbColor: MaterialStateProperty.all(Colors.white),
+                    activeTrackColor: Color(0xff4B6EB1),
+                    value: isChecked, 
+                    onChanged: (bool value){
                     setState(() {
                       isChecked = value;
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text('switch를 ON하였습니다.'),
                           action: SnackBarAction(
-                            label: 'OK', 
+                            label: 'OK',
                             onPressed: (){}
                           ),
                         )
                       );
                     });
                   }
+                  )
                 );
               }
             )

@@ -1,0 +1,4 @@
+이 폴더 안에 Card, ChoiceChip, FloatingActionButton class 따로 만든 다음 
+객체 지향 개념 적용해보기
+
+(일단 먼저 코드부터 짜보고!!ㅠㅠ)
