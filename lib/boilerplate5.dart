@@ -73,7 +73,7 @@ class _SodaPageViewState extends State<SodaPageView> with TickerProviderStateMix
               currentPageIndex: _currentPageIndex,
               onUpdateCurrentPageIndex: _updateCurrentPageIndex,
             ),
-            SizedBox(height: 20,)
+            SizedBox(height: 26,)
           ],
         ),
       ],
@@ -114,20 +114,17 @@ class PageIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          TabPageSelector(
-            controller: tabController,
-            color: Color.fromRGBO(216, 216, 216, 1),
-            selectedColor: Color.fromRGBO(24, 41, 73, 1),
-            borderStyle: BorderStyle.none,
-            indicatorSize: 6,
-          ),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        TabPageSelector(
+          controller: tabController,
+          color: Color.fromRGBO(216, 216, 216, 1),
+          selectedColor: Color.fromRGBO(24, 41, 73, 1),
+          borderStyle: BorderStyle.none,
+          indicatorSize: 6,
+        ),
+      ],
     );
   }
 }
@@ -141,7 +138,7 @@ class FirsrtPage extends StatelessWidget {
       color: Colors.white,
       child: Column(
         children: [
-          Container(height: 267, color: Colors.white,),
+          Container(height: 267,),
           SizedBox(
             width: 254, height: 270,
             child: Image.asset('images/boilerplate5/sodaicon.png'),
