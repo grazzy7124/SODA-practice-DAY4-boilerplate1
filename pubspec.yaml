@@ -59,6 +59,9 @@ flutter:
   assets:
     - images/lake.jpg
     - images/pinkSky.jpg
+    - images/boilerplate5/sodaicon.png
+    - images/boilerplate5/soda1.png
+    - images/boilerplate5/soda2.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
